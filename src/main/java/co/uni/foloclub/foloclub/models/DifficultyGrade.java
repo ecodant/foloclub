@@ -1,4 +1,4 @@
-package co.uni.foloclub.foloclub;
+package co.uni.foloclub.foloclub.models;
 
 public enum DifficultyGrade {
   HARD,

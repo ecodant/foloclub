@@ -1,7 +1,7 @@
-package co.uni.foloclub.foloclub;
+
+package co.uni.foloclub.foloclub.models;
 
 import org.bson.types.ObjectId;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,13 +10,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.util.List;
 
-@Document(collection = "trainers")
+@Document(collection = "sports")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Trainer {
+public class Sport {
   @Id
   private ObjectId id;
-  private String specialization;
-  private List<TrainingSession> trainingSessions;
+  private String name;
+  private String description;
+  private DifficultyGrade difficulty;
+  private List<Trainer> trainers;
 }
