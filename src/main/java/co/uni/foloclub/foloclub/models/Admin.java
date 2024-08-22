@@ -10,8 +10,8 @@ import lombok.EqualsAndHashCode;
 @Document(collection = "users")
 @EqualsAndHashCode(callSuper = true)
 public class Admin extends User {
-  public Admin(ObjectId id, String name, String email, String password) {
-    super(id, name, email, password, "ADMIN");
+  public Admin(String id, String name, String email, String role) {
+    super(id, name, email, role);
   }
 
 }
