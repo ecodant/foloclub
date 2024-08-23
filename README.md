@@ -1,6 +1,6 @@
 # Sports Management System
 
-## RESTful API
+## API
 
 This API is designed to manage a sports club, allowing you to manage sports, coaches, members, and training sessions.
 
