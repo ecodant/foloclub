@@ -1,4 +1,3 @@
-
 package co.uni.foloclub.foloclub.trainingsessions;
 
 import org.bson.types.ObjectId;
