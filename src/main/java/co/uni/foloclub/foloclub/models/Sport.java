@@ -15,15 +15,14 @@ import java.util.LinkedList;
 @NoArgsConstructor
 public class Sport {
   @Id
-  private String id;
+  private ObjectId id;
   private String name;
   private String description;
   private DifficultyGrade difficulty;
   private Collection<Trainer> trainers;
 
-  // For the future, validate the creation of the Sport Object but defining the
-  // Grade of Difficulty
-  public Sport(String id, String name, String description, DifficultyGrade difficulty, Collection<Trainer> trainers) {
+
+  public Sport(ObjectId id, String name, String description, DifficultyGrade difficulty, Collection<Trainer> trainers) {
     this.id = id;
     this.name = name;
     this.description = description;
@@ -31,14 +30,5 @@ public class Sport {
     this.difficulty = difficulty;
   }
 
-  // Error For assign the Enum DifficultyGrade in POSTMAN, so check it if in the
-  // front end could match the ENUM
-  public Sport(String id, String name, String description) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
-    this.trainers = new LinkedList<>();
 
-    this.difficulty = DifficultyGrade.STANDARD;
-  }
 }

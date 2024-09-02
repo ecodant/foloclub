@@ -11,12 +11,12 @@ import lombok.Data;
 public class User {
 
     @Id
-    private String id;
+    private ObjectId id;
     private String name;
     private String email;
     private String role;  
 
-    public User(String id, String name, String email, String role) {
+    public User(ObjectId id, String name, String email, String role) {
         this.id = id;
         this.name = name;
         this.email = email;
